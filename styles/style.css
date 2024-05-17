@@ -102,29 +102,30 @@ body {
   font-weight: 300;
 }
 
-footer {
-  padding: 3em 0;
-  text-align: center;
-  font-size: 13px;
+.controles {
+  transition: 0.8s;
+  position: fixed;
+  transform: translateY(100px);
+  bottom: 0;
+  background-color: #131313;
+  padding: 15px;
+  width: 100%;
+}
+.controles button {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #22ce5e;
 }
 
-.controls {
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 2rem;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+.controles-ativo {
+  transform: translateY(0);
 }
-.controls span {
-  color: #fff;
-  font-size: 1.2rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+
+.tocando {
+  color: rgb(34, 172, 0);
 }/*# sourceMappingURL=style.css.map */

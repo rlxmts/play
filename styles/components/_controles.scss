@@ -1,0 +1,26 @@
+@use '../abstract/variaveis';
+
+.controles{
+    transition: .8s;
+    position: fixed;
+    transform: translateY(100px);
+    bottom: 0;
+    background-color: #131313;
+    padding: 15px ;
+    width: 100%;
+
+    button{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: variaveis.$font-titulo;
+        color: variaveis.$verde;
+    }
+}
+
+.controles-ativo{
+    transform: translateY(0);
+}
