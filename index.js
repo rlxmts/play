@@ -16,11 +16,11 @@ listaDeMusicas.forEach( musica => {
     
 })
 
-
 playerBt.addEventListener( 'click', ()=> {
 
     let primeiraFaixa = listaDeMusicas[0];
     let nomePrimeiraFaixa = primeiraFaixa.classList[1];
-    tocarMusica(nomePrimeiraFaixa);
 
+    audio = new Audio(`./audio/${nomePrimeiraFaixa}.mp3`);
+    audio.play();
 })
