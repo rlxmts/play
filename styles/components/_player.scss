@@ -1,0 +1,44 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.player{
+    @include mixins.display-fb(column);
+    align-items: center;
+padding-bottom: 4rem;
+    button{
+        @include mixins.botoes;
+        cursor: pointer;
+    }
+
+    ul{
+        @include mixins.display-fb(column);
+        width: 80%;
+
+        li{
+            border-bottom: 1px solid variaveis.$cinza;
+            display: flex;
+            gap: 1em;
+            list-style: none;
+            padding: 5px 0;
+            cursor: pointer;
+            
+            img{
+                width: 50px;
+            }
+            div{
+                @include mixins.display-fb(column);
+                justify-content: center;
+
+                h4{
+                    @include mixins.fs-ff-fw(15px, variaveis.$font-titulo, 500);
+                }
+                .tocando{
+                    color: variaveis.$verde;
+                }
+                span{
+                    @include mixins.fs-ff-fw(10px, variaveis.$font-titulo, 300);
+                }
+            }
+        }
+    }
+}

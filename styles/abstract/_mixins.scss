@@ -1,0 +1,21 @@
+@use './variaveis';
+
+@mixin display-fb($direcao){
+    display: flex;
+    flex-direction: $direcao;
+}
+
+@mixin botoes{
+        background-color: variaveis.$verde;
+        padding: .6em 2em;
+        color: variaveis.$branco;
+        border:none;
+        margin: 1em 0;
+        border-radius: 50px;
+}
+
+@mixin fs-ff-fw($tamanho, $familia, $peso){
+    font-size: $tamanho;
+    font-family: $familia;
+    font-weight: $peso;
+}

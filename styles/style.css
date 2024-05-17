@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #FFF;
+  font-size: 16px;
+}
+
+body {
+  background-color: #000;
+}
+
+.cabecalho {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 23%, rgb(0, 123, 255) 70%);
+  padding: 5px 10px;
+}
+.cabecalho .topo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cabecalho .topo img {
+  width: 20px;
+  margin: 10px;
+}
+.cabecalho .apresentacao_perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cabecalho .apresentacao_perfil .foto {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 100px;
+}
+.cabecalho .apresentacao_perfil h1 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin: 1em 0;
+}
+.cabecalho .apresentacao ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  gap: 1em;
+}
+.cabecalho .apresentacao ul img {
+  width: 20px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+.player button {
+  background-color: #22ce5e;
+  padding: 0.6em 2em;
+  color: #FFF;
+  border: none;
+  margin: 1em 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.player ul {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.player ul li {
+  border-bottom: 1px solid #202026;
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.player ul li img {
+  width: 50px;
+}
+.player ul li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.player ul li div h4 {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.player ul li div .tocando {
+  color: #22ce5e;
+}
+.player ul li div span {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+footer {
+  padding: 3em 0;
+  text-align: center;
+  font-size: 13px;
+}
+
+.controls {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+.controls span {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
